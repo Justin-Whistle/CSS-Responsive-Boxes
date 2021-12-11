@@ -1,3 +1,53 @@
 body {
-  background: blanchedalmond;
+  background: rgb(245, 241, 229);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 3;
+}
+
+.b p {
+  font-family: cursive;
+  max-width: fit-content;
+  font-size: 1.5em;
+  background-color:rgb(221, 178, 123);
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
+  }
+  main, footer, header {
+    margin: 1em;
+  }
+}
+
+header.a {
+  font-family: cursive;
+  text-align: center;
+  font-size: 3em;
+  background-color: tan; 
+  background-image: url('https://www.freewpheaders.com/wp-content/gallery/fishing/fishing-sport-sunset-header.jpg');
+}
+
+.c p {
+  font-family: cursive;
+  max-width: fit-content;
+  font-size: 1.5em;
+  background-color:rgb(221, 178, 123);
 }

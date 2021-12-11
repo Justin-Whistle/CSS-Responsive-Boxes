@@ -1,3 +1,80 @@
 body {
   background: peachpuff;
 }
+
+* {
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 3;
+  align-items: center;
+  min-height: 70vh;
+  justify-content: space-between;
+}
+
+aside {
+  display: flex;
+  width: 95%;
+  height: 10em;
+  justify-content: space-between;
+  flex-grow: 10;
+  margin: .5em;
+}
+
+main {
+  display: flex;
+  width: 95%;
+  height: 10em;
+  justify-content: space-between; 
+  flex-grow: 10;
+  margin: .5em;
+}
+
+footer {
+  width: 100%;
+}
+
+aside > div {
+  flex-grow: 10;
+  margin: .5em;
+}
+
+main > div {
+  flex-grow: 10;
+  margin: .5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  header {
+    width: 100%;
+    min-height: 20vh;
+  }
+  
+  .wrap {
+    flex-basis: 50%;
+    min-height:  80vh;
+  }
+  
+  footer {
+    margin: .5em;
+    flex-grow: 3;
+    min-height:  80vh;
+  }
+}
